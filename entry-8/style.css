@@ -21,4 +21,15 @@ img {
     -webkit-filter: blur(0px);
     filter: blur(0px)
 }/*makes image blurry/not*/
-
+#center {
+    cursor: grab;
+} 
+#center:active {
+    cursor: grabbing;
+}/*makes cursor into a a hand*/
+p {
+    font-family: VT323, sans-serif;
+    font-size: 70px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}/*positioning text*/
