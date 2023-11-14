@@ -1,0 +1,120 @@
+body {
+    background: #FCCC0A; 
+}
+.center {
+    width: 15%;
+    height: 15%;
+    -webkit-filter: blur(4px);
+    filter: blur(4px)
+}
+.center:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+}
+.center{
+    z-index: 2;
+    position: sticky;
+    top:0; right:0;
+}
+.empty{
+    z-index: 0;
+    width:50%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chair1 {
+    z-index: 1;
+    flex-shrink: 0;
+    width: 1368px;
+    height: 1039px;
+    position:absolute;
+    left: 10px;
+    bottom: -45px;
+
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.person1 {
+    z-index: 1;
+    flex-shrink: 0;
+    width: 1368px;
+    height: 1039px;
+    position:absolute;
+    left: 10px;
+    bottom: -45px;
+    animation: blink 1s linear infinite;
+}/*blinking*/
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.person2 {
+    z-index: 1;
+    flex-shrink: 0;
+    width: 1368px;
+    height: 1039px;
+    position:absolute;
+    right: 15px;
+    bottom: -43px;
+    animation: blink 1s linear infinite;
+}
+.circle{
+    z-index: 1;
+    position:absolute;
+    top:108px;
+    left:700px;
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+    padding: 20px;
+    background: green;
+    border: 3px solid #000;
+    color: #ffffff;
+    text-align: center;
+    font: 30px Helvetica, sans-serif;
+}
+.marquee-container {
+    width: 100%; /* Full-width container */
+    background-color: #ffffff; 
+    padding: 20px;
+    overflow: hidden;
+    border: 3px solid black;
+    
+}
+
+.marquee {
+    font-family: Helvetica, sans-serif;
+    font-size: x-large;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollMarquee 15s linear infinite;
+    padding: 10px; 
+    bottom: 20px;
+}
+
+@keyframes scrollMarquee {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move off-screen to the left */
+    }
+}

@@ -1,0 +1,24 @@
+body {
+    background: #ffffff; 
+    
+}
+img {
+    width: 25%;
+    height: 25%;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 25%;
+    justify-content: center;
+}
+.center:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+}/*makes image blurry/not*/
+
