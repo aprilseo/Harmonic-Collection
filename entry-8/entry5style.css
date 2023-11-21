@@ -1,0 +1,106 @@
+body{
+    background: #FF6319;
+}
+.container{
+    font-family: 'VT323';
+    display:grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; /*dividng the columns up*/
+    grid-template-rows: 0.6fr 2fr 2fr 0.2fr; /* dividing the rows */
+    grid-template-areas: 
+    "header header header header header" /*how many of the 1fr is going to be the header */ 
+    "nav pic1 pic1 pic2 pic2"
+    "nav blank1 main main blank2"
+    "footer footer footer footer footer";
+}
+#header{
+    font-size:xx-large;
+    color:#FEF7EC;
+    background: #FF6319;
+    grid-area: header;
+    border: 2px solid #FF6319; /* Border for individual grid items */
+  padding: 30px;
+  text-align: center;
+}
+#pic1{
+    background: #FEF7EC;
+    grid-area:pic1;
+    border: 2px solid #FF6319; /* Border for individual grid items */
+  padding: 20px;
+  text-align: center;
+
+}
+#pic1 img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#pic2{
+    background: #FEF7EC;
+    grid-area: pic2;
+    border: 2px solid #FF6319; /* Border for individual grid items */
+  padding: 20px;
+  text-align: center;
+}
+#pic2 img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+#main{
+    background:#FEF7EC;
+    font-size: x-large;
+    grid-area:main;
+    border: 2px solid #FF6319; /* Border for individual grid items */
+  padding-top: 60px;
+  padding-right:20px;
+  padding-left: 20px;
+  text-align: center;
+}
+#nav{
+    background:#FEF7EC;
+    grid-area: nav;
+    font-size: x-large;
+    border: 2px solid #FF6319; /* Border for individual grid items */
+  padding: 20px;
+  padding-top:50px;
+  text-align: center;
+
+}
+#footer{
+    background: #FF6319;
+    color: #FEF7EC;
+    font-size:x-large;
+    grid-area: footer;
+    border: 2px solid #FF6319; /* Border for individual grid items */
+  padding: 20px;
+  text-align: center;
+}
+#blank1{
+    grid-area: blank1;
+    font-size: x-large;
+    background: #FEF7EC;
+    border: 2px solid #FF6319; /* Border for individual grid items */
+  padding-top: 130px;
+  text-align: center;
+}
+#blank2{
+    grid-area: blank2;
+    font-size: x-large;
+    background: #FEF7EC;
+    border: 2px solid #FF6319; /* Border for individual grid items */
+  padding-top: 130px;
+  text-align: center;
+}
+.custom-link {
+    text-decoration: none; /* Turns off the default underline */
+    color: #333; /* Sets the default color for the link */
+    /* Additional styles if needed */
+    font-size: x-large;
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    /* Additional styles for hover state if needed */
+    color:#FF6319;
+    font-size: xx-large;
+}
