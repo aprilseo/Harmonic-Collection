@@ -1,0 +1,74 @@
+body{
+    font-family: 'VT323';
+    background-color: black;
+}
+
+.end-credits {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.credit {
+    animation: scroll 20s linear infinite; /* Adjust duration as needed */
+}
+
+.credit span {
+    display: block;
+    margin-bottom: 10px;
+    color: #fefdec;
+    font-size: 20px;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(-150%); }
+}
+
+#nav {
+    position: fixed;
+    bottom: 30px; /* Adjust the distance from the bottom */
+    left: 30px; /* Adjust the distance from the left */
+    font-family: 'VT323';
+    color: #fef7ec; /* Adjust the text color */
+    z-index: 1;
+    animation: blink 3s linear infinite;
+  }
+  @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  @media (max-width:900px) {
+    .bottom {
+        color: #ffffff;
+    }
+  }
+  @media (min-width:1300px) {
+    .bottom {
+        color:#FCCC0A;
+    }
+}  
+.custom-link {
+    text-decoration: none; /* Turns off the default underline */
+    color: #333; /* Sets the default color for the link */
+    /* Additional styles if needed */
+    font-size: x-large;
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    /* Additional styles for hover state if needed */
+    color:#FF6319;
+    font-size: xx-large;
+}
