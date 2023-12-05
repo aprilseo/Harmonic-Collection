@@ -1,0 +1,134 @@
+body {
+    background: #FEF7EC; 
+    
+}
+@media (max-width:900px) {
+    body {
+        background-color: #00AEDB;
+    }
+  }
+  @media (max-width:900px) {
+    marquee {
+        color: #00B159;
+    }
+  }
+  @media (min-width:1300px) {
+    body {
+        background-color:#00B159;
+    }
+    
+  }
+  .center {
+    width: 15%;
+    height: 15%;
+    -webkit-filter: blur(4px);
+    filter: blur(4px)
+}
+.center:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+}
+.center{
+    z-index: 2;
+    position: sticky;
+    top:0; right:0;
+}
+
+.producer-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.producer {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+}
+.button-container {
+    position: fixed;
+    bottom: 10px; 
+    left: 10px; 
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.previous-btn {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent; /* Height of the triangle */
+    border-bottom: 30px solid transparent; /* Height of the triangle */
+    border-right: 50px solid #FF6319; /* Width of the triangle and color */
+    cursor: pointer;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.button-text {
+    margin-left: 10px;
+    font-size: 25px; 
+    color:#FF6319;
+    font-family: VT323, sans-serif;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #FEF7EC, 0 0 7px #fff, 0 0 9px #FCCC0A, 0 0 11px #FF6319, 0 0 13px #FEF7EC;
+    }
+    to {
+      text-shadow: 0 0 10px #FEF7EC, 0 0 15px #fff, 0 0 20px #FCCC0A, 0 0 25px #FF6319, 0 0 30px #FEF7EC;
+    }
+  }
+
+  .next-button-container {
+    position: fixed;
+    bottom: 10px; 
+    right: 10px; 
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+.next-btn {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent; /* Height of the triangle */
+    border-bottom: 30px solid transparent; /* Height of the triangle */
+    border-right: 50px solid #FF6319; /* Width of the triangle and color */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+    transform:rotate(180deg);
+    margin-right: 10px;
+}
+
+.next-button-text {
+  
+    font-size: 25px; 
+    color:#FF6319;
+    font-family: VT323, sans-serif;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #FEF7EC, 0 0 7px #fff, 0 0 9px #FCCC0A, 0 0 11px #FF6319, 0 0 13px #FEF7EC;
+    }
+    to {
+      text-shadow: 0 0 10px #FEF7EC, 0 0 15px #fff, 0 0 20px #FCCC0A, 0 0 25px #FF6319, 0 0 30px #FEF7EC;
+    }
+  }
