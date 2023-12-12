@@ -1,0 +1,70 @@
+body {
+    background: #ffffff; 
+    font-family: 'VT323';
+}
+.center {
+    width: 15%;
+    height: 15%;
+    -webkit-filter: blur(4px);
+    filter: blur(4px)
+}
+.center:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+}
+.center{
+    z-index: 2;
+    position: sticky;
+    top:0; right:0;
+}.center-right {
+    float: right;
+    z-index: 2;
+    position: sticky;
+    top:0; right:0;
+  }
+  .center-right {
+    width: 15%;
+    height: 15%;
+    -webkit-filter: blur(4px);
+    filter: blur(4px)
+}
+.center-right:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+}
+/*from codepen*/
+* {
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .ny {
+    perspective: 3000px;
+    width: 10%;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+  }
+  .ny img {
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+    box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+    transition: all .4s;
+    transform-style: preserve-3d;
+    width: 300%;
+  }
+  .ny:hover img {
+    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+  }
+  .bottom {
+    font-family:'VT323';
+    font-size:30px;
+    color:#000000;
+    position: fixed;
+    bottom:30px;
+    left: 30px;}

@@ -1,76 +1,91 @@
 /* Apply background image to the body */
 body {
-    background-image: url('IMG_0051.jpg');
-    position:absolute;
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-     background-attachment: fixed; /* Fixes the background image */
-  margin: 0; /* Removes default body margin */
-  padding: 0; /* Removes default body padding */
-  }
-  
-  /* Initially hiding the image and positioning it absolutely within the container */
-  #image {
-    display: none;
-    position: absolute;
-    scale:20%;
-  }
-  .container {
-    width: 70%; /* Adjust width as needed */
-    margin: 0 auto; /* Center the container horizontally */
-  }
-  #nav{
-    background:#00AEDB;
-    grid-area: nav;
-    font-size: x-large;
-    border: 2px solid #00AEDB; /* Border for individual grid items */
-  padding: 30px;
-  padding-top:50px;
-  text-align: center;
-  font-family: 'VT323';
-  z-index: 2;
-  color: #fef7ec;
+  background-image: url('IMG_0051.jpg');
+  position:absolute;
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+   background-attachment: fixed; /* Fixes the background image */
+margin: 0; /* Removes default body margin */
+padding: 0; /* Removes default body padding */
+}
+
+/* Initially hiding the image and positioning it absolutely within the container */
+#image {
+  display: none;
+  position: absolute;
+  scale:20%;
+}
+.container {
+  width: 70%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+#nav{
+  background:#00AEDB;
+  grid-area: nav;
+  font-size: x-large;
+  border: 2px solid #00AEDB; /* Border for individual grid items */
+padding: 30px;
+padding-top:50px;
+text-align: center;
+font-family: 'VT323';
+z-index: 2;
+color: #fef7ec;
 }
 .bottom {
-    font-family:'VT323';
-    font-size:30px;
-    color:#FCCC0A;
-    position: fixed;
-    bottom:30px;
-    left: 30px;
-    animation: blink 3s linear infinite;
+  font-family:'VT323';
+  font-size:30px;
+  color:#FCCC0A;
+  position: fixed;
+  bottom:30px;
+  left: 30px;
+  animation: blink 3s linear infinite;
+}
+@keyframes blink {
+  0% {
+      opacity: 1;
   }
-  @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  50% {
+      opacity: 0;
   }
-  @media (max-width:900px) {
-    .bottom {
-        color: #ffffff;
-    }
+  100% {
+      opacity: 1;
   }
-  @media (min-width:1300px) {
-    .bottom {
-        color:#FCCC0A;
-    }
+}
+@media (max-width:900px) {
+  .bottom {
+      color: #ffffff;
+  }
+}
+@media (min-width:1300px) {
+  .bottom {
+      color:#FCCC0A;
+  }
 }  
 .custom-link {
-    text-decoration: none; /* Turns off the default underline */
-    color: #333; /* Sets the default color for the link */
-    /* Additional styles if needed */
-    font-size: x-large;
+  text-decoration: none; /* Turns off the default underline */
+  color: #333; /* Sets the default color for the link */
+  /* Additional styles if needed */
+  font-size: x-large;
 }
 
 .custom-link:hover {
-    text-decoration: underline; /* Adds underline on hover */
-    /* Additional styles for hover state if needed */
-    color:#FF6319;
-    font-size: xx-large;
+  text-decoration: underline; /* Adds underline on hover */
+  /* Additional styles for hover state if needed */
+  color:#FF6319;
+  font-size: xx-large;
+}
+.center {
+  width: 15%;
+  height: 15%;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+
+.center:hover {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
 }
