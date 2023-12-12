@@ -1,0 +1,111 @@
+/* CSS for circular buttons */
+.container {
+    position: relative;
+    align-items:center;
+    justify-content: center;
+    margin: 50px auto;
+    font-family: 'VT323';
+    font-size: xx-large;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+.circle-buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+}
+
+.circle-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #3498db; /* Change button color */
+    text-decoration: none;
+    color: white;
+    position: absolute;
+}
+
+/* Arrange buttons in a circular pattern */
+.circle-buttons a:nth-child(1) {
+    transform: rotate(30deg) translate(150px) rotate(-30deg);
+}
+
+.circle-buttons a:nth-child(2) {
+    transform: rotate(90deg) translate(150px) rotate(-90deg);
+}
+
+.circle-buttons a:nth-child(3) {
+    transform: rotate(150deg) translate(150px) rotate(-150deg);
+}
+
+.circle-buttons a:nth-child(4) {
+    transform: rotate(210deg) translate(150px) rotate(-210deg);
+}
+
+.circle-buttons a:nth-child(5) {
+    transform: rotate(270deg) translate(150px) rotate(-270deg);
+}
+
+.circle-buttons a:nth-child(6) {
+    transform: rotate(330deg) translate(150px) rotate(-330deg);
+}
+
+#nav{
+    background:#00AEDB;
+    grid-area: nav;
+    font-size: x-large;
+    border: 2px solid #00AEDB; /* Border for individual grid items */
+  padding: 30px;
+  padding-top:50px;
+  text-align: center;
+  font-family: 'VT323';
+  z-index: 2;
+  color: #fef7ec;
+}
+.custom-link {
+    text-decoration: none; /* Turns off the default underline */
+    color: #333; /* Sets the default color for the link */
+    /* Additional styles if needed */
+    font-size: x-large;
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    /* Additional styles for hover state if needed */
+    color:#FF6319;
+    font-size: xx-large;
+}
+.circle-buttons a {
+    /* Existing styles */
+    background-color: #3498db; /* Change button color */
+    /* Add transition for smoother color change */
+    transition: background-color 0.3s ease;
+}
+
+.circle-buttons a:hover {
+    /* Change button color on hover */
+    background-color: #e74c3c; /* New button color on hover */
+}

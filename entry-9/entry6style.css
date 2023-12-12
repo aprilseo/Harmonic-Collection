@@ -61,7 +61,7 @@ body{
     place-items:center;
     background-color:#010101;
   }
-  
+  /*gallery rotation from codepen*/
   .gallery{
     position:relative;
     width:300px;

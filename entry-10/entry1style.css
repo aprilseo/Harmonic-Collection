@@ -1,0 +1,142 @@
+body {
+    background: #ffffff; 
+    font-family: 'VT323';
+transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+.center {
+    width: 15%;
+    height: 15%;
+    -webkit-filter: blur(4px);
+    filter: blur(4px)
+}
+.center:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+}
+.center{
+    z-index: 2;
+    position: sticky;
+    top:0; right:0;
+}
+.empty{
+    z-index: 0;
+    width:50%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Style for the text typing effect */
+.typing-effect {
+    font-size: 200px;
+    color: #000000;
+    padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1em solid #FFFFFF; /* Cursor effect */
+    animation: typing 3s steps(40) infinite;
+  
+    /* Center-align text horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:400px;
+  }
+  
+  /* Keyframe animation to simulate typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .emptycar {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:400px;
+  }
+  .emptycar2 {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:400px;
+  }
+  .emptycar3 {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:400px;
+  }
+  .center-right {
+    float: right;
+    z-index: 2;
+    position: sticky;
+    top:0; right:0;
+  }
+  .center-right {
+    width: 15%;
+    height: 15%;
+    -webkit-filter: blur(4px);
+    filter: blur(4px)
+}
+.center-right:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+}
+  .text{
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom:400px;
+  }
+  .text h1 {
+    animation: blink 3s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Width of the scrollbar */
+.scroll-menu::-webkit-scrollbar {
+  width: 10px; /* Adjust width as needed */
+}
+
+/* Track (background) of the scrollbar */
+.scroll-menu::-webkit-scrollbar-track {
+  background: #000000; /* Change track color here */
+}
+
+/* Handle (thumb) of the scrollbar */
+.scroll-menu::-webkit-scrollbar-thumb {
+  background: #FCCC0A; /* Change thumb color here */
+}
+
+/* Styles for the content to be scrolled */
+.content {
+  padding: 20px;
+}
+
+/* Styles for the content elements that will change color */
+.content h1,
+.content p {
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+/* Additional styling for the content elements */
+/* ... */

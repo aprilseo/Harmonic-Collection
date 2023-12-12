@@ -34,31 +34,12 @@ body{
     bottom: 30px; /* Adjust the distance from the bottom */
     left: 30px; /* Adjust the distance from the left */
     font-family: 'VT323';
-    color: #fef7ec; /* Adjust the text color */
+    color: #fef7ec;
     z-index: 1;
-    animation: blink 3s linear infinite;
+    
   }
-  @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-  }
-  @media (max-width:900px) {
-    .bottom {
-        color: #ffffff;
-    }
-  }
-  @media (min-width:1300px) {
-    .bottom {
-        color:#FCCC0A;
-    }
-}  
+  
+  
 .custom-link {
     text-decoration: none; /* Turns off the default underline */
     color: #333; /* Sets the default color for the link */
@@ -72,3 +53,18 @@ body{
     color:#FF6319;
     font-size: xx-large;
 }
+.tbc{
+    animation: blink 3s linear infinite;
+    color: #FCCC0A;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }

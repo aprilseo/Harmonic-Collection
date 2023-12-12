@@ -1,0 +1,133 @@
+body {
+    background: #ffffff; 
+    font-family: 'VT323';
+}
+.center {
+    width: 15%;
+    height: 15%;
+    -webkit-filter: blur(4px);
+    filter: blur(4px)
+}
+.center:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+}
+.center{
+    z-index: 1;
+    position: sticky;
+    top:0; right:0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 144px;
+    font-weight: bold;
+  }
+  
+  .marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    border: 4px solid #000000; 
+    direction: rtl; /* Set the direction to right-to-left */
+}
+
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  
+  .marquee2 {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    border: 4px solid #000000; 
+    direction: ltr; /* Set the direction to right-to-left */
+}
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee2 32s linear infinite;
+  }
+  
+  @keyframes marquee2 {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  
+  .marquee3 {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    border: 4px solid #000000; 
+    direction: ltr; /* Set the direction to right-to-left */
+}
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee3 15s linear infinite;
+  }
+  
+  @keyframes marquee3 {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .center-right {
+    float: right;
+    z-index: 2;
+    position: sticky;
+    top:0; right:0;
+  }
+  .center-right {
+    width: 15%;
+    height: 15%;
+    -webkit-filter: blur(4px);
+    filter: blur(4px)
+}
+.center-right:hover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px)
+}
+.fixed {
+    position: fixed;
+    width: 20%;
+    max-width: 100px; 
+    z-index: 2;
+}
+
+.sideye {
+    left:100px; top: 400px;
+    width:20%;
+}
+
+.image {
+    z-index: 1;
+    position:absolute;
+    right:300px; top: 250px;
+    width:20%;
+}
+
+.heart {
+    z-index: 1;
+    position:absolute;
+    right:300px; top: 250px;
+    width:20%;}

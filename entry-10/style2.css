@@ -1,0 +1,43 @@
+body {
+  background: #000000;
+  margin: 0;
+}
+/*chat gpt horizontal scroll*/
+.scroll-menu {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.menu-items {
+  display: inline-block;
+  width: 50vw; /* Set container width to fill half of the viewport */
+}
+
+.menu-items img {
+  width: 100%; /* Set the width of each image to fill the container */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 40px; /* Adjust spacing between images */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.menu-items img:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  opacity: 0.7; /* Reduce opacity on hover */
+}
+
+/* Width of the scrollbar */
+.scroll-menu::-webkit-scrollbar {
+  width: 10px; /* Adjust width as needed */
+}
+
+/* Track (background) of the scrollbar */
+.scroll-menu::-webkit-scrollbar-track {
+  background: #000000; /* Change track color here */
+}
+
+/* Handle (thumb) of the scrollbar */
+.scroll-menu::-webkit-scrollbar-thumb {
+  background: #FCCC0A; /* Change thumb color here */
+}
