@@ -12,14 +12,14 @@ const gravity = 0.5;
 const terminalVelocity = 5;
 const drag = 0.075;
 const colors = [
-{ front: 'red', back: 'darkred' },
-{ front: 'green', back: 'darkgreen' },
-{ front: 'blue', back: 'darkblue' },
-{ front: 'yellow', back: 'darkyellow' },
-{ front: 'orange', back: 'darkorange' },
+{ front: 'red', back: 'darkturquoise' },
+{ front: 'green', back: 'darkpurple' },
+{ front: 'blue', back: 'darkyellow' },
+{ front: 'yellow', back: 'darkorange' },
+{ front: 'orange', back: 'darkblue' },
 { front: 'pink', back: 'darkpink' },
-{ front: 'purple', back: 'darkpurple' },
-{ front: 'turquoise', back: 'darkturquoise' }];
+{ front: 'purple', back: 'darkgreen' },
+{ front: 'turquoise', back: 'darkred' }];
 
 
 //-----------Functions--------------
